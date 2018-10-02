@@ -1,0 +1,48 @@
+
+
+body{
+ background: #efefef;
+}
+
+.container{
+  width: 230px;
+  margin: 100px auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 1px #bbb solid;
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+h3{
+  margin-top: 0;
+}
+
+#midi-input{
+  width: 100%;
+  
+}
+
+#midi-submit{
+  background: red;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+}
+
+#frequency-output{
+  font-weight: 700;
+}
+
+.success{
+  color: #009900;
+
+}
+
+.fail{
+  color: #990000;
+
+}

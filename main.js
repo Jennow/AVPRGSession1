@@ -49,10 +49,13 @@ document.addEventListener('DOMContentLoaded', function(e){
   var $output = document.getElementById('frequency-output');
 
   $submitBtn.addEventListener('click', function(e){
-    if($input.value >= 0 && $input.value <= 127){
+    if($input.value >= 0 && $input.value <= 127 && $input.value != ""){
       $output.innerHTML = allFrequencies[$input.value];
+      $output.className = "success";
     } else {
       $output.innerHTML = "Ungültige Eingabe";
+      $output.className = "fail";
+
     }
   });
 });
