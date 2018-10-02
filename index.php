@@ -1,3 +1,13 @@
+<?php
+  // echo($_SERVER['HTTP_HOST']);
+  // echo(strpos($_SERVER['HTTP_HOST'], 'localhost'));
+  $preUrl = "";
+
+  if(strpos($_SERVER['HTTP_HOST'], 'localhost') != 0){
+    $preUrl = "/AVPRGSession1";
+  } 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,15 +30,14 @@
       /**************************************************************
       Hier Projekte einbinden
       **************************************************************/
-
       var projects = [
         {
           name: "FrequenzRechner Vorlesung 1",
-          url: "/AVPRGSession1/FrequenzRechner/index.html"
+          url: "<?= $preUrl?>/FrequenzRechner/"
         },
         {
           name: "DrumSoundAPI Vorlesung 1",
-          url: "/AVPRGSession1/DrumSoundAPI/index.html"
+          url: "<?= $preUrl?>/DrumSoundAPI/"
         }
       ]
         
