@@ -1,0 +1,32 @@
+.drums{
+}
+
+.drum {
+  width: 50%;
+  float: left;
+  height: 300px;
+  /* margin: 5px; */
+  display: inline-flex;
+  /* border-radius: 50%; */
+}
+
+#drum1:active, #drum2:active, #drum3:active, #drum4:active{
+  /* box-shadow: 10px solid #efefef; */
+  background: #fff;
+}
+
+#drum1 {
+  background: #ffff00;
+}
+
+#drum2 {
+  background: #ff7700;
+}
+
+#drum3 {
+  background: #ff0000;
+}
+
+#drum4 {
+  background: #ff0077;
+}
