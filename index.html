@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Audio Programmierung Aufgaben</title>
+  <style>
+    body{
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+      font-family: sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      var $projectsContainer = document.getElementById('projects');
+      
+      /**************************************************************
+      Hier Projekte einbinden
+      **************************************************************/
+
+      var projects = [
+        {
+          name: "FrequenzRechner Vorlesung 1",
+          url: "/FrequenzRechner/index.html"
+        },
+        {
+          name: "DrumSoundAPI Vorlesung 1",
+          url: "/DrumSoundAPI/index.html"
+        }
+      ]
+        
+      var html = "";
+      projects.forEach(project => {
+        html += '<a href="'+project.url+'">'+project.name+'</a><br><br>';
+      });
+
+      $projectsContainer.innerHTML = html;
+    });
+   
+  </script>
+</head>
+<body>
+    <h3>Audioprogrammierung Aufgaben</h3>
+   <div id="projects"></div>
+</body>
+</html>
