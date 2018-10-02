@@ -1,12 +1,3 @@
-<?php
-  // echo($_SERVER['HTTP_HOST']);
-  // echo(strpos($_SERVER['HTTP_HOST'], 'localhost'));
-  $preUrl = "";
-
-  if(strpos($_SERVER['HTTP_HOST'], 'localhost') != 0){
-    $preUrl = "/AVPRGSession1";
-  } 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,11 +24,11 @@
       var projects = [
         {
           name: "FrequenzRechner Vorlesung 1",
-          url: "<?= $preUrl?>/FrequenzRechner/"
+          url: "/AVPRGSession1/FrequenzRechner/"
         },
         {
           name: "DrumSoundAPI Vorlesung 1",
-          url: "<?= $preUrl?>/DrumSoundAPI/"
+          url: "/AVPRGSession1/DrumSoundAPI/"
         }
       ]
         
