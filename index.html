@@ -12,23 +12,49 @@
       margin: 20px auto;
       text-align: center;
       font-family: sans-serif;
+      
+    }
+
+    a{
+      text-decoration: none;
+      font-weight: 500;
+      color: #777;
+    }
+
+    a:hover{
+      font-weight: 700;
     }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function(){
       var $projectsContainer = document.getElementById('projects');
+      
 
       /**************************************************************
+      prefix 
+      **************************************************************/
+      // var prefix = "";
+      var prefix = "/AVPRGSession1";
+
+       /**************************************************************
       Hier Projekte einbinden
       **************************************************************/
       var projects = [
         {
-          name: "FrequenzRechner Vorlesung 1",
-          url: "/AVPRGSession1/FrequenzRechner/"
+          name: "Vorlesung 1: FrequenzRechner ",
+          url: prefix+"/FrequenzRechner/"
         },
         {
-          name: "DrumSoundAPI Vorlesung 1",
-          url: "/AVPRGSession1/DrumSoundAPI/"
+          name: "Vorlesung 1: DrumSoundAPI ",
+          url: prefix+"/DrumSoundAPI/"
+        },
+        {
+          name: "Hausaufgabe 1: Theremin ",
+          url: prefix+"/Theremin/"
+        },
+        {
+          name: "Vorlesung 2: Drums AudioBufferSourceNodes ",
+          url: prefix+"/DrumAudioBuffeSourceNodes/"
         }
       ]
         

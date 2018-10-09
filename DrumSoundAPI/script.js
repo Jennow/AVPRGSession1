@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function(){
   var context = new AudioContext();
 
   soundbuffers = [];
-
   for(let i = 0; i < $drumpads.children.length; i++){
     soundbuffers[i] = new Audio("sounds/sound"+(i+1)+".wav");
     var soundNode = context.createMediaElementSource(soundbuffers[i]);
@@ -14,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function(){
     soundNode.connect(gainNode);
     gainNode.connect(context.destination);
     
-    $drumpads.children[i].addEventListener('click', function(e){soundbuffers[i].play()});
+    $drumpads.children[i].addEventListener('click', function(e){
+      context.resume().then(() => {
+        soundbuffers[i].play()
+      });
+      
+    });
   }
 });

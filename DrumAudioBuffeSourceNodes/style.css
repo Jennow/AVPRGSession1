@@ -1,0 +1,33 @@
+html, body, .drums{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.drum {
+  width: 50%;
+  height: 50%;
+  float: left;
+  /* height: 300px; */
+  display: inline-flex;
+}
+
+#drum1:active, #drum2:active, #drum3:active, #drum4:active{
+  background: #fff;
+}
+
+#drum1 {
+  background: #ffff00;
+}
+
+#drum2 {
+  background: #ff7700;
+}
+
+#drum3 {
+  background: #ff0000;
+}
+
+#drum4 {
+  background: #ff0077;
+}
