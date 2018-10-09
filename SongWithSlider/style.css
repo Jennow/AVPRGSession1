@@ -1,10 +1,41 @@
 html, body{
   width: 100%;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 input{
   width: 80%;
   margin: 20px 10%;
   
+}
+
+button{
+  padding: 10px 20px; 
+  color: #fff;
+  font-weight: 700;
+  background: #229922;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+  width: 30%;
+
+}
+
+
+.paused{
+  background: #229922;
+}
+
+.paused:hover{
+  background: #88cc88;
+
+}
+
+.playing{
+  background: #992222;
+}
+
+.playing:hover{
+  background: #cc8888;
 }

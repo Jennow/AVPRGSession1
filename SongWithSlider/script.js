@@ -24,11 +24,15 @@ document.addEventListener('DOMContentLoaded', function(){
     if(isPlaying){
       sound.pause();
       sound.currentTime = 0;
-
+      $playBtn.innerHTML = "Song spielen";
+      $playBtn.className = "paused";
       isPlaying = false;
     } else {
-    sound.play();
+      sound.play();
       isPlaying = true;
+      $playBtn.innerHTML = "Song pausieren";
+      $playBtn.className = "playing";
+
     }
   });
 
