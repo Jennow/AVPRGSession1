@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var context = new AudioContext();
   var oscillator = null;
+
   gainNode = context.createGain();
   mousedown = false;
 
@@ -51,8 +52,11 @@ document.addEventListener('DOMContentLoaded', function(){
     maxGain = 1;
     minGain = 0;
     gainNode.gain.value = ((e.clientY / window.innerHeight) * maxGain) + minGain;
-    gainNode.gain.setTargetAtTime(((e.clientY / window.innerHeight) * maxGain) + minGain , context.currentTime, 0.01)
-    oscillatorNode.frequency.value = ((e.clientX / window.innerWidth) * maxFrequency) + minFrequency;
-    oscillator.frequency.setTargetAtTime(((e.clientX / window.innerWidth) * maxFrequency) + minFrequency, context.currentTime, 0.01);
+    gainNode.gain.setTargetAtTime(((e.clientY / window.innerHeight) * maxGain) + minGain , context.currentTime, 0.01);
+    if(oscillator){
+      oscillator.frequency.value = ((e.clientX / window.innerWidth) * maxFrequency) + minFrequency;
+      oscillator.frequency.setTargetAtTime(((e.clientX / window.innerWidth) * maxFrequency) + minFrequency, context.currentTime, 0.01);
+    }
+   
   }
 });

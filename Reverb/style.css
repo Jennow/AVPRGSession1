@@ -1,0 +1,22 @@
+html, body{
+  background: #efefef;
+  height: 100%;
+  color: #bb4444;
+  text-align: center;
+}
+
+#playStopBtn{
+  border: none;
+  margin-left: 0.6em;
+  margin-bottom: 0.5em;
+  background-color: #888;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  font-weight: 700;
+  
+}
+
+#playStopBtn:active{
+  background-color: #ccc;
+
+}
